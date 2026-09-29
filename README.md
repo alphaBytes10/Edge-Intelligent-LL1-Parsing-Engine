@@ -27,13 +27,22 @@ This is not just a parser. It implements the full LL(1) pipeline:
 6.  **Step-by-Step Parsing:** Shows full stack, input remaining, and action trace
 7.  **Parse Tree Visualization:** SVG tree rendered with Knuth-style layout
 
-### Screenshots
+### Visual Walkthrough
 
-![Input and Transformations](LL1%20images/1.input.png)
-![Parse Table](LL1%20images/2.Parse%20Table.png)
-![Conflict Checker](LL1%20images/3.%20conflict%20checker.png)
-![Parse Result](LL1%20images/4.%20Parse%20result.png)
-![Collision Detection](LL1%20images/collision/5.%20collision%20detection.png)
+**1. Grammar Input & Transformations**
+![Grammar Input & Transformations](LL1%20images/1.input.png)
+
+**2. LL(1) Parse Table**
+![LL(1) Parse Table](LL1%20images/2.Parse%20Table.png)
+
+**3. Conflict Checker & FIRST/FOLLOW Sets**
+![Conflict Checker & FIRST/FOLLOW Sets](LL1%20images/3.%20conflict%20checker.png)
+
+**4. Parse Result: Input accepted, valid string of language**
+![Parse Result: Input accepted, valid string of language](LL1%20images/4.%20Parse%20result.png)
+
+**5. Collision Detection & Error Handling**
+![Collision Detection & Error Handling](LL1%20images/collision/5.%20collision%20detection.png)
 
 ### Quick Start
 
