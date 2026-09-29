@@ -77,22 +77,28 @@ http://localhost:5173
 ### Grammar Format
 
 One rule per line:
+```text
 E -> E + T | T
 T -> T * F | F
 F -> ( E ) | id
+```
 - Terminals: `id`, `+`, `*`, `(`, `)` - anything not defined as Non-Terminal
 - Use space to separate tokens: `id + id` not `id+id`
 - For epsilon: `A -> eps` or `A -> epsilon`
 
 ### Example Input
 
-Grammar:
+**Grammar:**
+```text
 E -> E + T | T
 T -> T * F | F
 F -> ( E ) | id
-Input String:
-id + id * id
-Result: ✓ Accepted, Parse Tree Generated
+```
+
+**Input String:**
+`id + id * id`
+
+**Result:** ✓ Accepted, Parse Tree Generated
 
 ### Tech Stack
 
